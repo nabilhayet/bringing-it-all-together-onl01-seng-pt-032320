@@ -30,4 +30,8 @@ class Dog
     dog = Dog.new(row[0],row[1],row[2])
     dog
   end 
+
+  def save 
+    
+  end 
 end
