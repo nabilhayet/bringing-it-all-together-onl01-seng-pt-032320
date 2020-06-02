@@ -9,7 +9,6 @@ class Dog
   end
 
   def self.create_table
-    self.drop_table
     sql = <<-SQL
     create table if not exists dogs
     (id INTEGER PRIMARY KEY,
@@ -33,7 +32,7 @@ class Dog
 
   def save
     sql = <<-SQL
-      INSERT INTO songs (name, breed)
+      INSERT INTO dogs (name, breed)
       VALUES (?, ?)
     SQL
 
