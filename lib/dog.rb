@@ -9,11 +9,11 @@ class Dog
 
   def self.create_table
     self.drop_table
-    sql = <<-SQL 
+    sql = <<-SQL
     create table dogs
     (id INTEGER PRIMARY KEY,
     name TEXT,breed TEXT)
-    SQL 
+    SQL
     DB[:conn].execute
   end
 end
